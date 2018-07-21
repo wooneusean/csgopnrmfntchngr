@@ -1,0 +1,10 @@
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\bin\Debug\csgopnrmfntchngr.exe.config
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\bin\Debug\csgopnrmfntchngr.exe
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\bin\Debug\csgopnrmfntchngr.pdb
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.csprojAssemblyReference.cache
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.Form1.resources
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.Properties.Resources.resources
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.csproj.GenerateResource.cache
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.csproj.CoreCompileInputs.cache
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.exe
+C:\Users\Woon Eusean\source\repos\csgopnrmfntchngr\csgopnrmfntchngr\obj\Debug\csgopnrmfntchngr.pdb
