@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.txtPreview = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -116,11 +117,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // txtPreview
+            // 
+            this.txtPreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreview.Location = new System.Drawing.Point(12, 111);
+            this.txtPreview.Multiline = true;
+            this.txtPreview.Name = "txtPreview";
+            this.txtPreview.Size = new System.Drawing.Size(421, 60);
+            this.txtPreview.TabIndex = 8;
+            this.txtPreview.Text = "The quick brown fox jumps over the lazy dog";
+            this.txtPreview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 120);
+            this.ClientSize = new System.Drawing.Size(445, 183);
+            this.Controls.Add(this.txtPreview);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -148,6 +161,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.TextBox txtPreview;
     }
 }
 

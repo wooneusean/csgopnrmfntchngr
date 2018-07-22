@@ -11,6 +11,7 @@ namespace csgopnrmfntchngr
 {
     public partial class Form1 : Form
     {
+        PrivateFontCollection fontCol = new PrivateFontCollection();
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace csgopnrmfntchngr
             {
                 MessageBox.Show("Directory and font must not be empty.");
             }
-            else if (!Directory.Exists(csdir) || !Directory.Exists(font))
+            else if (!Directory.Exists(csdir) || !File.Exists(font))
             {
                 MessageBox.Show("Directory or font directory does not exist.");
             }
@@ -58,7 +59,6 @@ namespace csgopnrmfntchngr
                 ZipFile.ExtractToDirectory(zipPath, extractPath);
                 File.Copy(font, Path.Combine(csfonts, Path.GetFileName(font)));
                 // Preparing font variables.
-                PrivateFontCollection fontCol = new PrivateFontCollection();
                 fontCol.AddFontFile(font);
                 string fontName = fontCol.Families[0].Name;
                 string fontFileName = Path.GetFileName(font);
@@ -87,7 +87,7 @@ namespace csgopnrmfntchngr
                 string confd95Patched = confd95.Replace("RuneScape UF", fontName);
                 File.WriteAllText(Path.Combine(csfonts, "conf.d/95-valve.conf"), confd95Patched);
 
-                fontCol.Dispose();
+                fontCol = new PrivateFontCollection();
                 MessageBox.Show("Done Installing " + fontName + ". To uninstall, delete " + csfonts + " and rename " + csfontsbckp + " to 'fonts'.");
             }
         }
@@ -97,6 +97,10 @@ namespace csgopnrmfntchngr
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 txtFont.Text = openFileDialog1.FileName;
+                fontCol.AddFontFile(txtFont.Text);
+                Font f = new Font(fontCol.Families[0].Name, 16);
+                fontCol = new PrivateFontCollection();
+                txtPreview.Font = f;
             }
         }
 
